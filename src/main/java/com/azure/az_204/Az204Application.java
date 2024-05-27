@@ -8,13 +8,11 @@ import org.springframework.web.bind.annotation.RestController;
 @SpringBootApplication
 @RestController
 public class Az204Application {
-
-	@GetMapping("/Items")
+	@GetMapping("/Item")
 	public String products()
 	{
 		return "Request Received .. !";
 	}
-
 	public static void main(String[] args) {
 		SpringApplication.run(Az204Application.class, args);
 	}
